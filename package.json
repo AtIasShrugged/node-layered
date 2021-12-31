@@ -5,7 +5,7 @@
   "main": "main.js",
   "type": "commonjs",
   "scripts": {
-    "start": "node ./dist/main.js",
+    "start": "node ./dist/src/main.js",
     "build": "tsc",
     "test": "jest",
     "test coverage": "jest --coverage",

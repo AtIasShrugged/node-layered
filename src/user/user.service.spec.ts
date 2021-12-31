@@ -34,9 +34,9 @@ beforeAll(() => {
 })
 
 const idMock: number = 3
-const emailMock: string = 'vasya@pupkin'
-const nameMock: string = 'Vasya'
-const passwordMock: string = 'YaNeVasya'
+const emailMock: string = 'test123@test.test'
+const nameMock: string = 'asd'
+const passwordMock: string = 'qwerty'
 const hashMock: string = '$2a$10$qSW.ehngVZqVCCwmQwNeg.1g9DUq6jn2nBP9FEtInAwJDT8rKXgjW'
 
 describe('User Service', () => {
@@ -58,7 +58,7 @@ describe('User Service', () => {
     })
 
     expect(createdUser?.id).toEqual(3)
-    expect(createdUser?.password).not.toEqual('YaNeVasya')
+    expect(createdUser?.password).not.toEqual('qwerty')
   })
 
   it('validateUser - passwords equal', async () => {
